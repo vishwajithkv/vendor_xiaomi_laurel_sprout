@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/laurel_sprout
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/laurel_sprout/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
     vendor/xiaomi/laurel_sprout/proprietary/system/lib/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.camera.common@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/system_ext/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.camera.device@1.0.so \
@@ -122,7 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/camera/sdm660_camera_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm660_camera_india.xml \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
-    vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/qdcm_calib_data_Dual_Sharp_WQHD_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_Sharp_WQHD_cmd_mode_dsi_panel.xml \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/etc/qdcm_calib_data_Dual_Sharp_wqhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_Sharp_wqhd_video_mode_dsi_panel.xml \
@@ -2728,7 +2726,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/hw/audio.primary.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.trinket.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/hw/consumerir.trinket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.trinket.so \
-    vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.so \
+    vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/hw/fingerprint.goodix_fod.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod.default.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
@@ -2757,7 +2755,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.2.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/vendor.qti.hardware.fingerprintext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprintext@1.0.so \
-    vendor/xiaomi/laurel_sprout/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/xiaomi/laurel_sprout/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/laurel_sprout/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
@@ -3497,7 +3494,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
     libMpeg4SwEncoder \
     libthermalclient \
     com.quicinc.cne.api@1.0 \
